@@ -1418,3 +1418,49 @@ h3.quote::before {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+/* Basic styles for the body and content */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.video-background {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  overflow: hidden; /* Hide any overflow from the video */
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Place the video behind other content */
+  background-size: cover; /* Ensure video covers the entire screen */
+  
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white; 
+  text-align: center;
+  padding: 50px;
+  background-color: #0000005b;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
